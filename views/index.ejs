@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <link rel="stylesheet" href="/assets/css/index.css">
+<link rel="stylesheet" href="/assets/css/dropdown.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <title>Gestión de Inventario</title>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn"><%= traducciones.language%></button>
+  <div class="dropdown-content">
+    <a href="/index?lang=es">
+      <img src="../assets/images/Espana.png" alt="Español" class="lang-icon">
+      <%= traducciones.spanish %>
+    </a>
+    <a href="/index?lang=en">
+      <img src="../assets/images/Inglaterra.png" alt="English" class="lang-icon">
+      <%= traducciones.english%>
+    </a>
+  </div>
+</div>
+
+
+
+
+  <div class="layout layout--centered">
+    <h1 class="text text--heading-1"><%= traducciones.title %></h1>
+    
+      <div class="form">
+  <input class="form-input" type="text" placeholder="<%= traducciones.name%>" id="nombre">
+  <input class="form-input" type="number" placeholder="<%= traducciones.price %>" id="precio">
+  <input class="form-input" type="number" placeholder="<%= traducciones.quantity %>" id="cantidad">
+  <input class="form-input" type="text" placeholder="<%= traducciones.description %>" id="descripcion">
+</div>
+
+<div class="form-buttons">
+  <button class="button" id="crear"><%= traducciones.create%></button>
+  <button class="button" id="mostrar"><%= traducciones.display%></button>
+</div>
+
+
+    <div id="listaProductos" class="product-list"></div>
+  </div>
+
+
+
+  <div id="modalEditar" class="modal hidden">
+  <div class="modal-content">
+    <h3 class="text text--heading-3" id="modal-titulo"><%= traducciones.editProducts%></h3>
+    <input class="form-input" type="text" id="modal-nombre" placeholder="Nombre">
+    <input class="form-input" type="number" id="modal-precio" placeholder="Precio">
+    <input class="form-input" type="number" id="modal-cantidad" placeholder="Cantidad">
+    <input class="form-input" type="text" id="modal-descripcion" placeholder="Descripción">
+    <button class="button" id="modal-guardar"><%= traducciones.save%></button>
+    <button class="button" id="modal-cerrar"><%= traducciones.cancel%></button>
+  </div>
+</div>
+
+
+  <script type="module" src="../assets/js/main.js"></script>
+
+</body>
+</html>

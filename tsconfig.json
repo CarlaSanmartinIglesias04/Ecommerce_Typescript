@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src/server",
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "nodenext",
+    "strict": true,                        
+    "skipLibCheck": true,                  // evita errores en dependencias tipo DefinitelyTyped
+    "resolveJsonModule": true,            //  importar archivos .json
+    "allowSyntheticDefaultImports": true,  // importaciones x defecto,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules", "build", "public"],
+  "include": ["src/server/**/*"]
+}

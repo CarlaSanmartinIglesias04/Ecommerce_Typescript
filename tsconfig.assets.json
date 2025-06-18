@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "public/assets/js" ,
+    "rootDir": "src/cliente",
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "nodenext"          
+  },
+  "exclude": ["node_modules","build", "public"],
+  "include": ["src/cliente/**/*"]
+}

@@ -1,0 +1,80 @@
+{
+  "title": "GESTIÓN INVENTARIO",
+  "title_en": "STOCK MANAGEMENT",
+
+  "create": "Crear",
+  "create_en": "Create",
+
+  "display": "Mostrar",
+  "display_en": "Display",
+
+  "language": "Idioma",
+  "language_en": "Language",
+
+  "spanish": "Español",
+  "spanish_en": "Spanish",
+
+  "english": "Inglés",
+  "english_en": "English",
+
+  "name": "Nombre",
+  "name_en": "Name",
+
+  "price": "Precio",
+  "price_en": "Price",
+
+  "quantity": "Cantidad",
+  "quantity_en": "Quantity",
+
+  "description": "Descripción",
+  "description_en": "Description",
+
+  "showProducts": "Mostrar",     
+  "showProducts_en": "Display",        
+
+  "hideProducts": "Ocultar",         
+  "hideProducts_en": "Hide",
+  
+  "update": "Actualizar",
+  "update_en": "Update",
+
+  "entry": "Entrada",
+  "entry_en": "Entry",
+
+  "exit": "Salida",
+  "exit_en": "Exit",
+
+  "edit": "Editar",
+  "edit_en": "Edit",
+  
+  "delete": "Eliminar",
+  "delete_en": "Delete",
+  "loading": "Cargando...",
+  "loading_en": "Loading...",
+  "apiError": "No se pudo conectar con la API.",
+  "apiError_en": "Could not connect to the API.",
+  "specialCharsWarning": "Por favor, evita caracteres especiales en el nombre o descripción.",
+  "specialCharsWarning_en": "Please avoid special characters in the name or description.",
+  "invalidValues": "El precio y la cantidad deben ser números positivos.",
+  "invalidValues_en": "Price and quantity must be positive numbers.",
+  "productUpdated": "Producto actualizado con éxito!",
+  "productUpdated_en": "Product successfully updated!",
+  "productCreated": "Producto creado con éxito!",
+  "productCreated_en": "Product successfully created!",
+  "noMoreQuantity": "La cantidad ya es 0. No se puede disminuir más.",
+  "noMoreQuantity_en": "Quantity is already 0. Cannot decrease further.",
+
+  "editProducts":"Editar productos",
+  "editProducts_en":"Edit products",
+
+  "save":"Guardar",
+  "save_en":"Save",
+
+  "cancel":"Cancelar",
+  "cancel_en":"Cancel"
+
+
+
+
+
+}
