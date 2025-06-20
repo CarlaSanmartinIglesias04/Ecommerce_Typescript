@@ -76,4 +76,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         modal?.classList.add("hidden");
         InventarioApp.productoEditandoId = null;
     });
+    document.getElementById("confirmarEliminarBtn")?.addEventListener("click", () => {
+        InventarioApp.confirmarEliminacion();
+    });
 });

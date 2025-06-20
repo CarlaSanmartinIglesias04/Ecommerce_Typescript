@@ -4,6 +4,8 @@
   --primario: rgb(123, 142, 159);
   --hover: #4f5b66;
   --texto-claro: antiquewhite;
+  --rojo:#a21111;
+  --rojoHover:#6e0404;
 }
 
 * {
@@ -23,6 +25,11 @@ body {
   align-items: center;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .text--heading-1 {
   margin-top: 40px;
@@ -30,7 +37,8 @@ body {
 }
 
 .text--heading-3 {
-  text-decoration: underline;
+  align-self: center;
+  
 }
 
 .layout {
@@ -65,12 +73,21 @@ body {
   border-radius: 5px;
   border: 1px solid var(--primario);
   margin: 15px 10px;
+  margin-left: 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
   background-color: var(--hover);
+}
+
+.button-danger{
+  background-color: var(--rojo);
+}
+
+.button-danger:hover {
+  background-color: var(--rojoHover);
 }
 
 .form-buttons {
@@ -118,4 +135,7 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+
+
+
 

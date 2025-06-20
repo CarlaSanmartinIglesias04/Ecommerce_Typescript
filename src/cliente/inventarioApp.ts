@@ -97,10 +97,44 @@ export default class InventarioApp {
     });
   }
 
-  static async eliminarProducto(id: string): Promise<void> {
-    await APIService.eliminarProducto(id);
+   // Muestra el modal de confirmación y guarda el id a eliminar
+static async eliminarProducto(id: string): Promise<void> {
+  const producto = await APIService.obtenerProductoPorId(id);
+
+  if (!producto) {
+    alert(this.traducciones.notFound || "Producto no encontrado.");
+    return;
+  }
+
+  this.productoEditandoId = id;
+
+  const modal = document.getElementById("modalEliminar");
+  const texto = document.getElementById("modalEliminarTexto");
+
+  if (modal) modal.classList.remove("hidden");
+  if (texto) {
+    texto.textContent = (this.traducciones.confirmDelete || "¿Eliminar el producto \"{name}\"?")
+      .replace("{name}", producto.name);
+  }
+}
+
+  // Elimina el producto si hay un id guardado
+  static async confirmarEliminacion(): Promise<void> {
+    if (!this.productoEditandoId) {
+      alert(this.traducciones.noProductSelected || "No se ha seleccionado un producto para eliminar.");
+      return;
+    }
+
+    await APIService.eliminarProducto(this.productoEditandoId);
+    alert(this.traducciones.productDeleted || "Producto eliminado con éxito!");
+    this.productoEditandoId = null;
+
+    const modal = document.getElementById("modalEliminar");
+    if (modal) modal.classList.add("hidden");
+
     this.listaProductos();
   }
+
 
  static async editarProducto(id: string): Promise<void> {
   const producto = await APIService.obtenerProductoPorId(id);

@@ -68,6 +68,27 @@
 </div>
 
 
+<div id="modalEliminar" class="modal hidden">
+  <div class="modal-content">
+    <p id="modalEliminarTexto" class="text text--heading-3">
+      ¿Estás seguro de eliminar este producto?
+    </p>
+    <div class="form-buttons">
+      <button id="confirmarEliminarBtn" class="button button-danger">
+        Sí, eliminar
+      </button>
+      <button onclick="document.getElementById('modalEliminar').classList.add('hidden')" class="button">
+        Cancelar
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
   <script type="module" src="../assets/js/main.js"></script>
 
 </body>

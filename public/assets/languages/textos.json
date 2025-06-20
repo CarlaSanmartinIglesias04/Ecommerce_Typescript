@@ -49,18 +49,25 @@
   
   "delete": "Eliminar",
   "delete_en": "Delete",
+
   "loading": "Cargando...",
   "loading_en": "Loading...",
+
   "apiError": "No se pudo conectar con la API.",
   "apiError_en": "Could not connect to the API.",
+
   "specialCharsWarning": "Por favor, evita caracteres especiales en el nombre o descripción.",
   "specialCharsWarning_en": "Please avoid special characters in the name or description.",
+
   "invalidValues": "El precio y la cantidad deben ser números positivos.",
   "invalidValues_en": "Price and quantity must be positive numbers.",
+
   "productUpdated": "Producto actualizado con éxito!",
   "productUpdated_en": "Product successfully updated!",
+
   "productCreated": "Producto creado con éxito!",
   "productCreated_en": "Product successfully created!",
+
   "noMoreQuantity": "La cantidad ya es 0. No se puede disminuir más.",
   "noMoreQuantity_en": "Quantity is already 0. Cannot decrease further.",
 
@@ -71,10 +78,16 @@
   "save_en":"Save",
 
   "cancel":"Cancelar",
-  "cancel_en":"Cancel"
+  "cancel_en":"Cancel",
 
+  "confirmDelete": "¿Estás seguro de eliminar el producto \"{name}\"?",
 
+  "confirmDelete_en": "Are you sure you want to delete the product \"{name}\"?",
 
-
+  "productDeleted": "Producto eliminado con éxito!",
+  "productDeleted_en": "Product deleted successfully!",
+  
+  "noProductSelected": "No se ha seleccionado un producto para eliminar.",
+  "noProductSelected_en": "No product has been selected for deletion."
 
 }
